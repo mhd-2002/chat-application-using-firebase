@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="register">REGISTER</string>
+    <string name="already_have_account">Already have account!!</string>
+</resources>
