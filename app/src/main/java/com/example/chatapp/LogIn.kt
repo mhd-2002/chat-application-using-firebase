@@ -1,5 +1,7 @@
 package com.example.chatapp
 
+import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -15,10 +17,7 @@ class LogIn : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLogInBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-
-
+        
         binding.backToRegister.setOnClickListener {
 
             finish()
@@ -44,6 +43,11 @@ class LogIn : AppCompatActivity() {
                     if (task.isSuccessful) {
 
                         message("successfully LogIn")
+
+                        val intent = Intent(this, LatestMessagesActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+
+                        startActivity(intent)
                         return@addOnCompleteListener
                     } else {
                         message(task.exception.toString())

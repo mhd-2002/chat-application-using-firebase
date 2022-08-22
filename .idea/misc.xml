@@ -6,9 +6,13 @@
         <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/bt_reg_back.xml" value="0.182" />
         <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/profile.xml" value="0.163" />
         <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/drawable/sign_up_background.xml" value="0.182" />
+        <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_latest_messages.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_log_in.xml" value="0.2552083333333333" />
         <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_main.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_new_message.xml" value="0.21331521739130435" />
         <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/layout/activity_sign_up.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/layout/user_row_new_message.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/menu/menu.xml" value="0.2552083333333333" />
         <entry key="..\:/Users/MHD/AndroidStudioProjects/ChatApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.182" />
       </map>
     </option>

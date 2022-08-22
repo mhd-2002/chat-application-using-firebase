@@ -1,12 +1,13 @@
 package com.example.chatapp
 
 import android.app.Activity
+import android.app.ProgressDialog
 import android.content.Intent
-import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.chatapp.databinding.ActivitySignUpBinding
@@ -20,10 +21,12 @@ class SignUp : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+         val pd = ProgressDialog(this)
 
         binding.btProfile.setOnClickListener {
 
@@ -34,7 +37,14 @@ class SignUp : AppCompatActivity() {
         }
 
         binding.btRegister.setOnClickListener {
+
+            pd.setTitle("Loading...")
+            pd.setMessage("please wait!")
+            pd.create()
+            pd.show()
+
             register()
+
         }
 
         binding.tvHaveAccount.setOnClickListener {
@@ -86,6 +96,13 @@ class SignUp : AppCompatActivity() {
             ref.putFile(selectedUrl!!)
                 .addOnSuccessListener {
                     message("successfully uploaded image!!")
+
+                    val intent = Intent(this, LatestMessagesActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+
+                    ProgressDialog(this).dismiss()
+
+                    startActivity(intent)
 
                     ref.downloadUrl.addOnSuccessListener {
                         saveUserToDatabase(it.toString())
