@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewMessageActivity">
+    tools:context=".messages.NewMessageActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_new_message"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/sign_up_background"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

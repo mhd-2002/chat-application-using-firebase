@@ -1,12 +1,11 @@
-package com.example.chatapp
+package com.example.chatapp.registerClasses
 
-import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.chatapp.databinding.ActivityLogInBinding
+import com.example.chatapp.messages.LatestMessagesActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class LogIn : AppCompatActivity() {

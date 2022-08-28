@@ -1,4 +1,4 @@
-package com.example.chatapp
+package com.example.chatapp.registerClasses
 
 import android.app.Activity
 import android.app.ProgressDialog
@@ -7,10 +7,11 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
-import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.chatapp.models.User
 import com.example.chatapp.databinding.ActivitySignUpBinding
+import com.example.chatapp.messages.LatestMessagesActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
